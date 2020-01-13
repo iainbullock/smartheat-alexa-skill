@@ -163,7 +163,8 @@
             ],
             "samples": [
                 "to turn away mode {onoff}",
-                "to set away mode {onoff}"
+                "to set away mode {onoff}",
+                "to turn {onoff} away mode"}
             ]
           },        
           {
