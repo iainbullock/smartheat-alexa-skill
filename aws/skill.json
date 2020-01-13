@@ -154,6 +154,19 @@
             ]
           },
           {
+            "name": "AwayIntent",
+            "slots": [
+                {
+                    "name": "onoff",
+                    "type": "ONOFF"
+                }
+            ],
+            "samples": [
+                "to turn away mode {onoff}",
+                "to set away mode {onoff}"
+            ]
+          },        
+          {
               "name": "AMAZON.MoreIntent",
               "slots": [],
               "samples": []
