@@ -216,6 +216,24 @@ app.intent('DefaultsIntent', {
         service => service.defaults());
 });
 
+app.intent('AwayIntent', {
+    'slots': {
+        'onoff': 'ONOFF',
+    },
+    'utterances': ['to turn away mode {onoff}', 'to set away mode {onoff}', 'to turn {onoff} away mode' ]
+}, async (request, response) => {
+    const onOff = request.slot('onoff');
+
+    return await reportOn(request, response, ThermostatService,
+        service => {
+            if (onOff === 'on') {
+                return service.setAwayModeOn();
+            } else {
+                return service.setAwayModeOff();
+            }
+        });
+});
+
 app.intent('AMAZON.HelpIntent', {
     'slots': {},
     'utterances': []
