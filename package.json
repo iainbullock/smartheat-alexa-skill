@@ -41,6 +41,6 @@
     "request-promise": "^4.2.4",
     "smartheat-aws": "github:matthewturner/smartheat-aws#v1.1.0",
     "smartheat-clients": "github:iainbullock/smartheat-clients#AwayMode",
-    "smartheat-core": "github:iainbullock/smartheat-core#AwayMode"
+    "smartheat-core": "github:iainbullock/smartheat-core#Tweaks"
   }
 }
