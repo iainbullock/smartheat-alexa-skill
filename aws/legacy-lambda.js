@@ -112,7 +112,7 @@ app.intent('TempIntent', {
 });
 
 app.intent('GetDeviceTimeIntent', {
-    'utterances': ['whats the device time', 'whats the time', 'the device time', 'the time']
+    'utterances': ['whats the device time', 'whats the time', 'the device time', 'the time', 'what the time is', 'what the device time is']
 }, async (request, response) => {
     return await reportOn(request, response, ThermostatService,
         service => service.time());
